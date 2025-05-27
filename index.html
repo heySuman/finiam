@@ -5,15 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Finiam · Simplifying the financial world</title>
 </head>
 
 <body>
-    <header>
+    <header id="header">
         <nav class="navbar">
             <div class="navbar__logo">
                 <img src="https://cdn.prod.website-files.com/63f63b60110323dc994c7d6b/63f63b6011032303c34c7d96_logo-dark-grey.svg"
-                    alt="finiam-logo">
+                    alt="finiam-logo" class="logo-black--active">
+
+                <img src="https://cdn.prod.website-files.com/63f63b60110323dc994c7d6b/63f63b6011032333684c7d94_logo-smoked-white.svg"
+                    alt="finiam-logo-white" class="logo-white">
             </div>
             <div class="navbar__navlinks">
                 <a href="#">About</a>
@@ -23,12 +26,39 @@
 
                 <button>We're hiring</button>
             </div>
+
+            <!-- Menu - Mobile -->
+
+            <div class="hamburger-menu" id="hamburger-menu">
+                <span class="hamburger-menu__first"></span>
+                <span class="hamburger-menu__second"></span>
+            </div>
+
+            <div class="navbar__navlinks__mobile" id="navbar__navlinks__mobile">
+                <div class="navbar__navlinks__mobile__top">
+
+                    <a href="#">About</a>
+                    <a href="#">Work</a>
+                    <a href="#">Blog</a>
+                    <a href="#">Contact</a>
+
+                </div>
+                <div class="navbar__navlinks__mobile__bottom">
+                    <button class="button-join">Join our team</button>
+                    <button class="button-contact">contact@fianim.com</button>
+
+                    <div class="button-small">
+                        <button>TW</button>
+                        <button>IN</button>
+                    </div>
+                </div>
+            </div>
         </nav>
     </header>
 
     <!-- Landing Page -->
     <main>
-        <div class="landing-page">
+        <div class="landing-page" id="landing-page">
             <h1 class="landing-page__left-top-text">
                 Need help<br> to lunch?
             </h1>
@@ -39,20 +69,30 @@
                 boundaries<br>
                 past the ordinary. Let’s simplify fintech and
                 web3, together.</h6>
+
+            <div id="landing-page__animation"></div>
         </div>
 
 
-        <div class="about">
+        <!-- <div class="about">
             <div class="about__container">
-                <p class="about__text">We tackle each project as a new partnership and make sure to simplify every
-                    process,
+                <p class="about__text">We tackle each project as a new partnership <span
+                        class="about__span__image--first">
+                        <img src="https://assets.website-files.com/63f63b60110323dc994c7d6b/63f63b60110323dfcb4c7dc9_Constant%20feedback%20%26%20candor%20Web.png"
+                            alt="">
+                    </span>
+                    and make sure to simplify every
+                    process <span class="about__span__image--second">
+                        <img src="https://assets.website-files.com/63f63b60110323dc994c7d6b/63f63b6011032303b84c7dc5_Simplify%20%26%20Make%20it%20accessible%20Web.png"
+                            alt="">
+                    </span>,
                     even when facing the most complex problems.
                 </p>
                 <button> Know more about Finiam</button>
             </div>
-        </div>
+        </div> -->
 
-        <div class="about__about">
+        <!-- <div class="about__about">
             <div class="about__about__container">
                 <p class="about__about__container__paragraph">
 
@@ -65,9 +105,10 @@
                     learning <span class="light-purple">Rust</span> <span class="light-purple">Svelte</span>.
                 </p>
             </div>
-        </div>
+        </div> -->
 
-        <div class="project">
+        <!-- Project Section -->
+        <!-- <div class="project">
             <div class="project__text">This isn’t our first rodeo.<br>
                 Some projects we helped untangle:</div>
 
@@ -89,8 +130,152 @@
             <div class="project__button__container">
                 <button class="project__button">Read more case studies</button>
             </div>
+        </div> -->
+
+        <!-- Company Logo Infinite Carasoul -->
+        <div class="logos">
+            <div class="logos-slide">
+                <img src="https://cdn.prod.website-files.com/63f63b6011032359404c7d6c/63f63b6011032347b64c7de9_625de4a6b29998d7a42a13ea_capitalise-logo%25201.png"
+                    alt="">
+                <img src="https://cdn.prod.website-files.com/63f63b6011032359404c7d6c/63f63b60110323e43a4c7d87_625de4e2b3e1788593d58f51_Group%2520322.png"
+                    alt="">
+                <img src="https://cdn.prod.website-files.com/63f63b6011032359404c7d6c/63f63b6011032306b64c7dbf_625de4c3c4712754bbad19a0_dissrup%25202.png"
+                    alt="">
+                <img src="https://cdn.prod.website-files.com/63f63b6011032359404c7d6c/63f63b6011032375fe4c7da1_625de3f734e6bb232dbf3eba_Copy%252Bof%252Bdrover_owler_20190716_090915_original%25201.png"
+                    alt="">
+                <img src="https://cdn.prod.website-files.com/63f63b6011032359404c7d6c/63f63b60110323f94a4c7dd5_625de4825571c968c12dfc2e_omise%25201.png"
+                    alt="">
+                <img src="https://cdn.prod.website-files.com/63f63b6011032359404c7d6c/63f63b601103231d454c7dfa_625de506b1996a440689d55d_utrust-logos-v2-430x304%25201.png"
+                    alt="">
+            </div>
+
+            <div class="logos-slide">
+                <img src="https://cdn.prod.website-files.com/63f63b6011032359404c7d6c/63f63b6011032347b64c7de9_625de4a6b29998d7a42a13ea_capitalise-logo%25201.png"
+                    alt="">
+                <img src="https://cdn.prod.website-files.com/63f63b6011032359404c7d6c/63f63b60110323e43a4c7d87_625de4e2b3e1788593d58f51_Group%2520322.png"
+                    alt="">
+                <img src="https://cdn.prod.website-files.com/63f63b6011032359404c7d6c/63f63b6011032306b64c7dbf_625de4c3c4712754bbad19a0_dissrup%25202.png"
+                    alt="">
+                <img src="https://cdn.prod.website-files.com/63f63b6011032359404c7d6c/63f63b6011032375fe4c7da1_625de3f734e6bb232dbf3eba_Copy%252Bof%252Bdrover_owler_20190716_090915_original%25201.png"
+                    alt="">
+                <img src="https://cdn.prod.website-files.com/63f63b6011032359404c7d6c/63f63b60110323f94a4c7dd5_625de4825571c968c12dfc2e_omise%25201.png"
+                    alt="">
+                <img src="https://cdn.prod.website-files.com/63f63b6011032359404c7d6c/63f63b601103231d454c7dfa_625de506b1996a440689d55d_utrust-logos-v2-430x304%25201.png"
+                    alt="">
+            </div>
         </div>
+
+        <!-- Blogs -->
+        <!-- <div class="blogs">
+            <div class="blog__header__text">
+                Sharing is caring so we make time to write about our experience.
+            </div>
+
+            <div class="blogs__container">
+                <h2>Latest blog posts</h2>
+                <div class="blogs_container__main">
+
+                    <div class="blog">
+                        <div class="blog__image__container">
+                            <img src="https://cdn.prod.website-files.com/63f63b6011032359404c7d6c/63f63b6011032355474c7e19_blogpost-1.png"
+                                alt="">
+                        </div>
+                        <div class="blog__text__container">
+                            <h2>Spotlight effect with JS and CSS</h2>
+                            <div class="blog__author">
+                                <img src="https://cdn.prod.website-files.com/63f63b6011032359404c7d6c/63f63b6011032358e94c7e1f_lange-p-500.webp"
+                                    alt="">
+                                <p class="blog__author__name"> David Lange</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog">
+                        <div class="blog__image__container">
+                            <img src="https://cdn.prod.website-files.com/63f63b6011032359404c7d6c/63f63b601103234d014c7e1a_blogpost-2.png"
+                                alt="">
+                        </div>
+                        <div class="blog__text__container">
+                            <h2>Developer Productivity</h2>
+                            <div class="blog__author">
+                                <img src="https://cdn.prod.website-files.com/63f63b6011032359404c7d6c/63f63b6011032398244c7e24_DS_avatar-p-500.png"
+                                    alt="">
+                                <p class="blog__author__name">Davide Silva</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog">
+                        <div class="blog__image__container">
+                            <img src="http://cdn.prod.website-files.com/63f63b6011032359404c7d6c/63f63b601103233e834c7e18_blogpost-3-p-500.png"
+                                alt="">
+                        </div>
+                        <div class="blog__text__container">
+                            <h2>NFT Attribute Types: A rarity system (but with Maths)</h2>
+                            <div class="blog__author">
+                                <img src="https://cdn.prod.website-files.com/63f63b6011032359404c7d6c/63f63b60110323a8c44c7e1d_viana-p-500.webp"
+                                    alt="">
+                                <p class="blog__author__name">Jose Diogo Viana</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog">
+                        <div class="blog__image__container">
+                            <img src="https://cdn.prod.website-files.com/63f63b6011032359404c7d6c/63f63b6011032307af4c7e1b_blogpost-4.png"
+                                alt="">
+                        </div>
+                        <div class="blog__text__container">
+                            <h2>Infinite Looping React component</h2>
+                            <div class="blog__author">
+                                <img src="https://cdn.prod.website-files.com/63f63b6011032359404c7d6c/63f63b6011032358e94c7e1f_lange-p-500.webp"
+                                    alt="">
+                                <p class="blog__author__name">David Lange</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="blogs__button__container">
+                <button class="blog__button">Read our blog</button>
+            </div>
+        </div> -->
     </main>
+
+    <!-- <footer>
+        <div class="footer__top">
+            <div class="footer__top__left">
+                <div>
+                    <a href="#">Home</a>
+                    <a href="#">Work</a>
+                    <a href="#">Contact</a>
+                </div>
+
+                <div>
+                    <a href="#">About</a>
+                    <a href="#">Blog</a>
+                    <a href="#">Careers</a>
+                </div>
+            </div>
+
+            <div class="footer__top__right">
+                <button class="footer__button footer__button__footer--book">Book a call</button>
+                <button class="footer_button footer__button__footer--join">Join our team</button>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <h1>Let’s build the next big thing, together.</h1>
+            <div>
+                <button>contact@fianim.com</button>
+                <button>TW</button>
+                <button>IN</button>
+            </div>
+        </div>
+
+        <!-- Big Circle -->
+        <div class="footer__circle"></div>
+
+    </footer> -->
+
+    <script src="app.js"></script>
 </body>
 
 </html>
