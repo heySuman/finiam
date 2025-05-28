@@ -26,13 +26,13 @@ window.onscroll = function () {
 
 // Landing Page Animation
 
-// const circleContainer = document.getElementById("landing-page__animation");
+const circleContainer = document.getElementById("landing-page__animation");
 
-// for (let i = 0; i < 16; i++) {
-//     const circle = document.createElement("div")
-//     circle.classList.add("circle")
-//     circleContainer.appendChild(circle)
-// }
+for (let i = 0; i < 16; i++) {
+    const circle = document.createElement("div")
+    circle.classList.add("circle")
+    circleContainer.appendChild(circle)
+}
 
 // const landingPage = document.getElementById("landing-page");
 // landingPage.onclick = function(){
