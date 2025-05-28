@@ -237,3 +237,51 @@
         }
     }
 }
+
+
+
+@media screen and (max-width: 500px) {
+    .project {
+        min-height: 50vh;
+        height: fit-content;
+        width: 100%;
+        padding: 10px;
+        margin: 0 auto;
+        position: relative;
+
+        .project__text {
+            font-size: 2.25rem;
+            font-weight: 400;
+            padding: 50px 0;
+        }
+
+        .project__container {
+            border-radius: 25px;
+            padding: 20px;
+            min-height: 50%;
+            height: 50%;
+
+            .project__container__text {
+                p {
+                    font-size: 1.8rem;
+                    max-width: 80%;
+                }
+            }
+
+            button {
+                position: static;
+                font-size: 1rem;
+                padding: 20px 10px;
+                font-weight: 400;
+                background: var(--light-screen);
+            }
+        }
+
+        .project__button__container {
+            .project__button {
+                padding: 20px 15px;
+                font-size: 1rem;
+            }
+        }
+    }
+}

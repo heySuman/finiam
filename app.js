@@ -3,6 +3,12 @@
 let prevScrollPosition = window.pageYOffset;
 const navbarThreshold = 500;
 window.onscroll = function () {
+    // check if the mobile menu is open
+    const isOpen = document.querySelector(".navbar__navlinks__mobile--open")
+    if(isOpen){
+        return
+    }
+
     let currentScrollPosition = window.pageYOffset;
     const header = document.getElementById("header");
 
@@ -58,5 +64,5 @@ hamburger.onclick = function () {
     whiteLogo = document.querySelector(".logo-white")
 
     whiteLogo.classList.toggle("logo-white-active")
-    blackLogo.classList.toggle("logo-black-active")
+    blackLogo.classList.toggle("logo-black--active")
 }

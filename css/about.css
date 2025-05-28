@@ -96,3 +96,16 @@
         }
     }
 }
+
+@media screen and (max-width : 500px) {
+    .about {
+        height: fit-content;
+        .about__container {
+            max-width: 90%;
+
+            .about__text {
+                font-size: 2.25rem;
+            }
+        }
+    }
+}
