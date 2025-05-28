@@ -1,3 +1,4 @@
+let isSpread = false
 // Handle Navbar Hide
 
 let prevScrollPosition = window.pageYOffset;
@@ -5,9 +6,12 @@ const navbarThreshold = 500;
 window.onscroll = function () {
     // check if the mobile menu is open
     const isOpen = document.querySelector(".navbar__navlinks__mobile--open")
-    if(isOpen){
+    if (isOpen) {
         return
     }
+
+    // align the balls when scrolled
+    if (isSpread) alignCircles()
 
     let currentScrollPosition = window.pageYOffset;
     const header = document.getElementById("header");
@@ -32,23 +36,47 @@ window.onscroll = function () {
 
 // Landing Page Animation
 
-const circleContainer = document.getElementById("landing-page__animation");
+const circleContainer = document.querySelector(".landing-page__animation__wrapper");
 
 for (let i = 0; i < 16; i++) {
-    const circle = document.createElement("div")
-    circle.classList.add("circle")
-    circleContainer.appendChild(circle)
+    const wrapper = document.createElement("div");
+    wrapper.classList.add("circle-wrapper");
+
+    const circle = document.createElement("div");
+    circle.classList.add("circle");
+
+    wrapper.appendChild(circle);
+    circleContainer.appendChild(wrapper);
 }
 
-// const landingPage = document.getElementById("landing-page");
-// landingPage.onclick = function(){
-//     console.log("landing page clicked")
-//     const circleList = document.getElementsByClassName("circle");
 
-//     for(let i = 0; i < circleList.length; i++){
-//         circleList[i].top = Math.random() * 100 + "px" 
-//     }
-// }
+const landingPage = document.getElementById("landing-page");
+const circles = Array.from(document.getElementsByClassName("circle"));
+
+function spreadCircles() {
+    const width = landingPage.clientWidth;
+    const height = landingPage.clientHeight;
+
+    circles.forEach((circle) => {
+        const x = (Math.random() * width) % width
+        const y = (Math.random() * height) % height
+        circle.style.transform = `translate(${x}px, ${y}px)`
+    });
+    isSpread = true;
+}
+
+function alignCircles() {
+    circles.forEach((circle) => (
+        circle.style.transform = "none"
+    ));
+    isSpread = false;
+}
+
+document.addEventListener("click", () => {
+
+    isSpread ? alignCircles() : spreadCircles();
+
+});
 
 // Hamburger Menu
 

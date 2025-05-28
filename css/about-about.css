@@ -87,7 +87,7 @@
 
         .about__about__container {
             padding: 20px 0px;
-            height: 50vh;
+            /* height: 50vh; */
 
             .about__about__container__paragraph {
                 width: 90%;
@@ -190,7 +190,7 @@
                     color: var(--light-green);
                     padding: 0 5px;
                     border-radius: 5px;
-                    font-size: 1.5rem;
+                    font-size: 1.25rem;
                     display: inline-block;
                 }
 
@@ -199,7 +199,7 @@
                     color: var(--purple);
                     padding: 0 5px;
                     border-radius: 5px;
-                    font-size: 1.5rem;
+                    font-size: 1.25rem;
                     display: inline-block;
                 }
             }
