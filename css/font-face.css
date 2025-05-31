@@ -1,13 +1,16 @@
 @font-face {
   font-family: 'Studio Feixen Sans';
-  src: url('/assests/fonts/StudioFeixenSansTRIAL-Light.ttf') format('truetype');
+  src: url('../assests/fonts/StudioFeixenSansTRIAL-Light.ttf') format('truetype');
   font-weight: 300;
   font-style: normal;
 }
 
+
+
+
 @font-face {
   font-family: 'Studio Feixen Sans';
-  src: url('/assests/fonts/StudioFeixenSansTRIAL-LightItalic.ttf') format('truetype');
+  src: url('../assests/fonts/StudioFeixenSansTRIAL-LightItalic.ttf') format('truetype');
   font-weight: 300;
   font-style: italic;
 }
@@ -15,14 +18,14 @@
 /* REGULAR - 400 */
 @font-face {
   font-family: 'Studio Feixen Sans';
-  src: url('/assests/fonts/StudioFeixenSansTRIAL-Regular.ttf') format('truetype');
+  src: url('../assests/fonts/StudioFeixenSansTRIAL-Regular.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Studio Feixen Sans';
-  src: url('/assests/fonts/StudioFeixenSansTRIAL-RegularItalic.ttf') format('truetype');
+  src: url('../assests/fonts/StudioFeixenSansTRIAL-RegularItalic.ttf') format('truetype');
   font-weight: 400;
   font-style: italic;
 }
@@ -30,14 +33,14 @@
 /* MEDIUM - 500 */
 @font-face {
   font-family: 'Studio Feixen Sans';
-  src: url('/assests/fonts/StudioFeixenSansTRIAL-Medium.ttf') format('truetype');
+  src: url('../assests/fonts/StudioFeixenSansTRIAL-Medium.ttf') format('truetype');
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Studio Feixen Sans';
-  src: url('/assests/fonts/StudioFeixenSansTRIAL-MediumItalic.ttf') format('truetype');
+  src: url('../assests/fonts/StudioFeixenSansTRIAL-MediumItalic.ttf') format('truetype');
   font-weight: 500;
   font-style: italic;
 }
@@ -45,14 +48,14 @@
 /* SEMIBOLD - 600 */
 @font-face {
   font-family: 'Studio Feixen Sans';
-  src: url('/assests/fonts/StudioFeixenSansTRIAL-Semibold.ttf') format('truetype');
+  src: url('../assests/fonts/StudioFeixenSansTRIAL-Semibold.ttf') format('truetype');
   font-weight: 600;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Studio Feixen Sans';
-  src: url('/assests/fonts/StudioFeixenSansTRIAL-SemiboldItalic.ttf') format('truetype');
+  src: url('../assests/fonts/StudioFeixenSansTRIAL-SemiboldItalic.ttf') format('truetype');
   font-weight: 600;
   font-style: italic;
 }
@@ -60,14 +63,14 @@
 /* BOLD - 700 */
 @font-face {
   font-family: 'Studio Feixen Sans';
-  src: url('/assests/fonts/StudioFeixenSansTRIAL-Bold.ttf') format('truetype');
+  src: url('../assests/fonts/StudioFeixenSansTRIAL-Bold.ttf') format('truetype');
   font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Studio Feixen Sans';
-  src: url('/assests/fonts/StudioFeixenSansTRIAL-BoldItalic.ttf') format('truetype');
+  src: url('../assests/fonts/StudioFeixenSansTRIAL-BoldItalic.ttf') format('truetype');
   font-weight: 700;
   font-style: italic;
 }

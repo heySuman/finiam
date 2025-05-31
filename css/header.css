@@ -522,7 +522,7 @@ header {
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             transition: all 0.3s ease-in-out;
-            font-size: 1.5rem;
+            font-size: 1.2rem;
         }
 
         a:before {
@@ -552,7 +552,7 @@ header {
             cursor: pointer;
             border: 1px solid var(--yellow);
             transition: all 0.3s ease-in-out;
-            font-size: 1.5rem;
+            font-size: 1.2rem;
 
             &:hover {
                 transform: scale(1.05);
@@ -681,4 +681,85 @@ header {
 .logo-white--active,
 .logo-black--active {
     display: block;
+}
+
+
+/* --------------------- Large Devices ------------------------ */
+@media screen and (min-width: 1600px) {
+    header {
+        nav {
+            width: 95%;
+            padding: 20px 0;
+            margin: 0 auto;
+        }
+    }
+
+    .navbar__navlinks__mobile {
+        display: none;
+    }
+
+    .hamburger-menu {
+        display: none;
+    }
+
+    .navbar__navlinks {
+        width: 45%;
+        z-index: 1000;
+
+        display: flex !important;
+        align-items: center;
+        justify-content: space-between;
+
+        a {
+            color: #fff;
+            text-decoration: none;
+            background-image: linear-gradient(to right, #fff, #fff 50%, #fff 50%);
+            background-size: 200% 100%;
+            background-position: -100%;
+            display: inline-block;
+            padding: 2px 0;
+            position: relative;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            transition: all 0.3s ease-in-out;
+            font-size: 1.8rem;
+        }
+
+        a:before {
+            content: "";
+            background: #fff;
+            display: block;
+            position: absolute;
+            bottom: -3px;
+            left: 0;
+            width: 0;
+            height: 1px;
+            transition: all 0.3s ease-in-out;
+        }
+
+        a:hover {
+            background-position: 0;
+        }
+
+        a:hover::before {
+            width: 100%;
+        }
+
+        button {
+            color: #000;
+            border: none;
+            border-radius: 300px;
+            cursor: pointer;
+            border: 1px solid var(--yellow);
+            transition: all 0.3s ease-in-out;
+            font-size: 1.8rem;
+
+            &:hover {
+                transform: scale(1.05);
+                background: var(--black);
+                border: 2px solid var(--yellow);
+                color: #fff;
+            }
+        }
+    }
 }
