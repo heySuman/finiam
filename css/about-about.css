@@ -1,7 +1,7 @@
 /* Second About */
 
 .about__about {
-    height: 100vh;
+    min-height: 100vh;
     background: var(--light-screen);
 
     .about__about__container {
@@ -40,18 +40,15 @@
 
 @media screen and (max-width : 1444px) {
     .about__about {
-        height: 80vh;
-
         display: grid;
         align-items: center;
 
         .about__about__container {
-            padding: 20px 0px;
-            height: 80%;
+            padding: 100px 0px;
 
             .about__about__container__paragraph {
                 width: 90%;
-                font-size: 2rem;
+                font-size: 1.8rem;
                 line-height: 200%;
                 color: #fff;
                 margin: 0 auto;
@@ -79,33 +76,34 @@
 }
 
 @media screen and (max-width : 1080px) and (min-width : 701px) {
-        .about__about {
+    .about__about {
         display: grid;
         align-items: center;
-        padding: 30px;
         min-height: 50vh;
+        padding: 0 15px 15px 15px;
+        height: auto;
 
         .about__about__container {
-            padding: 20px 0px;
-            /* height: 50vh; */
+            padding: 100px 0px;
+            height: 100%;
 
             .about__about__container__paragraph {
                 width: 90%;
-                font-size: 1.8rem;
+                font-size: 1.5rem;
                 line-height: 200%;
                 color: #fff;
                 margin: 0 auto;
                 line-height: 200%;
                 display: flex;
                 flex-wrap: wrap;
-                gap: 5px;
+                gap: 8px;
 
                 .light-green {
                     background: #706E48;
                     color: var(--light-green);
                     padding: 0 5px;
                     border-radius: 5px;
-                    font-size: 1.8rem;
+                    font-size: 1.5rem;
                     display: inline-block;
                 }
 
@@ -114,7 +112,7 @@
                     color: var(--purple);
                     padding: 0 5px;
                     border-radius: 5px;
-                    font-size: 1.8rem;
+                    font-size: 1.5rem;
                     display: inline-block;
                 }
             }
@@ -124,13 +122,14 @@
 
 @media screen and (max-width : 700px) and (min-width : 400px) {
     .about__about {
-        height: 50vh;
+        min-height: 50vh;
         display: grid;
         align-items: center;
 
         .about__about__container {
             padding: 20px 0px;
             height: fit-content;
+
             .about__about__container__paragraph {
                 width: 90%;
                 font-size: 1.5rem;
@@ -166,6 +165,7 @@
 
 @media screen and (max-width : 500px) {
     .about__about {
+        min-height: 0;
         height: auto;
         display: grid;
         align-items: center;
@@ -174,23 +174,28 @@
         .about__about__container {
             padding: 20px 0px;
             height: fit-content;
+
             .about__about__container__paragraph {
                 width: 90%;
-                font-size: 1.5rem;
-                line-height: 200%;
-                color: #fff;
                 margin: 0 auto;
+                padding: 50px 0;
+
+                font-size: 1.25rem;
+
                 line-height: 200%;
+
                 display: flex;
                 flex-wrap: wrap;
                 gap: 5px;
 
+                color: #fff;
+
                 .light-green {
                     background: #706E48;
                     color: var(--light-green);
-                    padding: 0 5px;
+                    padding: 0;
                     border-radius: 5px;
-                    font-size: 1.25rem;
+                    font-size: 1.15rem;
                     display: inline-block;
                 }
 
@@ -199,7 +204,106 @@
                     color: var(--purple);
                     padding: 0 5px;
                     border-radius: 5px;
-                    font-size: 1.25rem;
+                    font-size: 1.15rem;
+                    display: inline-block;
+                }
+            }
+        }
+    }
+}
+ 
+@media screen and (min-width : 1000px) {
+    .about__about {
+        min-height: 100vh;
+        display: grid;
+        align-items: center;
+        padding: 20px;
+        box-sizing: border-box;
+
+        .about__about__container {
+            padding: 100px 0px;
+            height: 100%;
+            width: 100%;
+
+            .about__about__container__paragraph {
+                margin: 0 auto;
+                padding: 50px 0;
+
+                font-size: 32px;
+
+                line-height: 200%;
+
+                display: flex;
+                flex-wrap: wrap;
+                gap: 15px;
+
+                color: #fff;
+
+                .light-green {
+                    background: #706E48;
+                    color: var(--light-green);
+                    padding: 0 10px;
+                    border-radius: 5px;
+                    font-size: 32px;
+                    display: inline-block;
+                }
+
+                .light-purple {
+                    background: #655D79;
+                    color: var(--purple);
+                    padding: 0 10px;
+                    border-radius: 5px;
+                    font-size: 32px;
+                    display: inline-block;
+                }
+            }
+        }
+    }
+} 
+
+@media screen and (min-width : 1200px) {
+    .about__about {
+        height: 100vh;
+        display: grid;
+        align-items: center;
+        padding: 0 28px 28px 28px;
+        width: 100%;
+
+        .about__about__container {
+            padding: 20px 0px;
+            height: 100%;
+            width: 100%;
+
+            .about__about__container__paragraph {
+                width: 90%;
+                margin: 0 auto;
+                padding: 50px 0;
+
+                font-size: 43px;
+
+                line-height: 200%;
+
+                display: flex;
+                flex-wrap: wrap;
+                gap: 15px;
+
+                color: #fff;
+
+                .light-green {
+                    background: #706E48;
+                    color: var(--light-green);
+                    padding: 0 10px;
+                    border-radius: 5px;
+                    font-size: 43px;
+                    display: inline-block;
+                }
+
+                .light-purple {
+                    background: #655D79;
+                    color: var(--purple);
+                    padding: 0 10px;
+                    border-radius: 5px;
+                    font-size: 43px;
                     display: inline-block;
                 }
             }

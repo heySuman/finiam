@@ -72,18 +72,16 @@ footer {
 
         .footer__top__right {
             display: flex;
-            justify-content: center;
-            width: 50%;
+            gap: 20px;
+            height: fit-content;
 
             button {
-                max-height: 75px;
-                padding: 10px 60px;
+                padding: 22px 44px;
 
                 font-size: 1.6rem;
                 border-radius: 50px;
                 border: 2px solid transparent;
                 transition: all 0.3s ease;
-                margin: 0 20px;
                 cursor: pointer;
 
                 &:hover {
@@ -110,7 +108,7 @@ footer {
         margin: 0 auto;
 
         h1 {
-            font-size: 8rem;
+            font-size: 6rem;
             font-weight: 400;
             color: #fff;
         }
@@ -161,18 +159,16 @@ footer {
 }
 
 
-@media screen and (max-width: 1444px) {
+@media screen and (max-width: 1440px) {
     footer {
         .footer__top {
             z-index: 1;
-            width: 100%;
             margin: 0 auto;
             display: flex;
             /* flex-direction: column; */
             justify-content: space-between;
 
             .footer__top__left {
-                width: 90%;
                 z-index: 1;
                 display: flex;
                 justify-content: space-around;
@@ -191,16 +187,12 @@ footer {
             .footer__top__right {
                 margin-top: 20px;
                 display: flex;
-                /* justify-content: space-around; */
                 align-items: center;
-                width: 100%;
 
                 button {
-                    width: 45%;
                     font-size: 1rem;
                     max-height: 75px;
-                    height: 50px;
-                    padding: 10px;
+                    padding: 22px 44px;
                 }
             }
         }
@@ -211,7 +203,81 @@ footer {
             margin: 0 auto;
 
             h1 {
-                font-size: 4rem;
+                font-size: 6rem;
+                font-weight: 400;
+                color: #fff;
+            }
+
+            div {
+                max-width: 80%;
+                display: flex;
+                flex-wrap: wrap;
+                gap: 10px;
+
+                button {
+                    box-sizing: border-box;
+                    padding: 22px 44px;
+                    margin: 0;
+
+                    font-size: 1.2rem;
+                    border-radius: 50px;
+                }
+            }
+        }
+
+        .footer__circle {
+            width: 500px;
+            height: 500px;
+        }
+    }
+
+}
+
+@media screen and (max-width: 1200px) {
+    footer {
+        .footer__top {
+            z-index: 1;
+            margin: 0 auto;
+            display: flex;
+            /* flex-direction: column; */
+            justify-content: space-between;
+
+            .footer__top__left {
+                z-index: 1;
+                display: flex;
+                justify-content: space-around;
+
+                div {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-start;
+
+                    a {
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+
+            .footer__top__right {
+                margin-top: 20px;
+                display: flex;
+                align-items: center;
+
+                button {
+                    font-size: 1rem;
+                    max-height: 75px;
+                    padding: 15px 30px;
+                }
+            }
+        }
+
+        .footer__bottom {
+            z-index: 1;
+            width: 80%;
+            margin: 0 auto;
+
+            h1 {
+                font-size: 5rem;
                 font-weight: 400;
                 color: #fff;
             }
@@ -322,4 +388,139 @@ footer {
         }
     }
 
+}
+
+
+@media screen and (max-width: 500px) {
+    footer {
+        .footer__top {
+            z-index: 1;
+            width: 100%;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            .footer__top__left {
+                width: 90%;
+                z-index: 1;
+                display: flex;
+                justify-content: space-around;
+
+                div {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-start;
+
+                    a {
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+
+            .footer__top__right {
+                margin-top: 20px;
+                display: flex;
+                justify-content: space-around;
+                width: 100%;
+                gap: 0;
+
+                button {
+                    width: fit-content;
+                    font-size: 1rem;
+                    padding: 20px 10px;
+                }
+            }
+        }
+
+        .footer__bottom {
+            z-index: 1;
+            width: 80%;
+            margin: 0 auto;
+
+            h1 {
+                font-size: 36px;
+                font-weight: 400;
+                color: #fff;
+                max-width: 100%;
+            }
+
+            div {
+                max-width: 80%;
+                display: flex;
+                flex-wrap: wrap;
+                gap: 10px;
+
+                button {
+                    box-sizing: border-box;
+                    padding: 13px 20px;
+                    margin: 0;
+
+                    font-size: 1rem;
+                    border-radius: 50px;
+
+                }
+            }
+        }
+
+        .footer__circle {
+            width: 280px;
+            height: 280px;
+        }
+    }
+
+}
+
+@media screen and (min-width : 1280px) {
+    .about {
+        .footer__circle {
+            width: 450px;
+            height: 450px;
+        }
+
+
+        .footer__bottom {
+            z-index: 1;
+            width: 80%;
+            margin: 0 auto;
+
+            h1 {
+                font-size: 6rem;
+                font-weight: 400;
+                color: #fff;
+            }
+
+            div {
+                button {
+                    max-height: 75px;
+                    height: 75px;
+                    padding: 10px 60px;
+
+                    font-size: 1.6rem;
+                    border-radius: 50px;
+                    border: 2px solid transparent;
+                    transition: all 0.3s ease;
+                    margin: 0 10px;
+                    cursor: pointer;
+                    background: var(--text-gray);
+                    border: 2px solid #fff;
+                    color: #fff;
+
+                    &:hover {
+                        transform: scale(1.05);
+                        background: #fff;
+                        color: var(--text-gray);
+                    }
+                }
+
+                .footer__button__footer--join {
+                    background: var(--purple);
+
+                    &:hover {
+                        border-color: var(--purple);
+                    }
+                }
+            }
+        }
+    }
 }

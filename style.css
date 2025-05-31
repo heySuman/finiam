@@ -7,6 +7,7 @@
 @import url('css/carousel.css');
 @import url('css/blogs.css');
 @import url('css/footer.css');
+@import url('css/font-face.css');
 
 :root {
     --light-green: #DEDB7B;
@@ -15,12 +16,22 @@
     --purple: #c4b2f6;
     --text-gray: #272727;
     --tomato: #EA7A5F;
+    --black: #272727;
+    --linen: #faf1ea;
+    --sherpa-blue: #005451;
+    --burnt-sienna: #ed7a5d;
+    --go-ben: #6e6d4e;
+    --silver-chalice: #afaeae;
+    --azure: #366abb;
+    --malibu: #68a3ff;
+    --yellow: #dedb7b;
+    --pink: #F6D5DB;
 }
 
-@font-face {
-    font-family: "Product Sans";
-    src: url(assests/font/ProductSans-Regular.woff);
+* {
+    font-family: "Studio Feixen Sans", sans-serif !important;
 }
+
 
 html,
 body {
