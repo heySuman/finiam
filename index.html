@@ -6,12 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
     <link rel="shortcut icon" href="./assests/finiam-logo.png" type="image/x-icon">
+    <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
+
     <title>Finiam · Simplifying the financial world</title>
 </head>
 
 <body>
     <div class="loading">
-        <img src="/assests/finiam-logo.png" alt="logo">
+        <dotlottie-player
+            src="https://cdn.prod.website-files.com/63f63b60110323dc994c7d6b/63f63b6011032358424c7d9c_loading-anim.json"
+            background="transparent" speed="1" style="width: 150px; height: 150px" direction="1" playMode="normal"
+            autoplay></dotlottie-player>
     </div>
     <header id="header">
         <nav class="navbar">

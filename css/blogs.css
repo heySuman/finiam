@@ -25,6 +25,7 @@
       gap: 16px;
 
       .blog {
+        cursor: pointer;
         max-height: 500px;
         height: fit-content;
         padding: 22px 14px 8px 14px;

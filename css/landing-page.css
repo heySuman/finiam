@@ -9,6 +9,7 @@
     position: relative;
 
     color: var(--linen);
+
     .landing-page__left-top-text {
         position: absolute;
         top: 10%;
@@ -16,15 +17,17 @@
         font-size: 112px;
         font-weight: 400;
         text-align: left;
+        line-height: 100%;
         margin: 0;
     }
-    
+
     .landing-page__right-bottom-text {
         position: absolute;
         font-size: 112px;
         font-weight: 400;
+        line-height: 100%;
         bottom: 5%;
-        right: 2%;        
+        right: 2%;
     }
 
     .landing-page__left-bottom-text,

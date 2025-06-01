@@ -140,6 +140,11 @@ header {
             .button-contact {
                 background: var(--text-gray);
                 border: 1px solid #fff;
+
+                &:hover {
+                    background: var(--linen);
+                    color: var(--black);
+                }
             }
         }
 
@@ -156,6 +161,11 @@ header {
                 border: 1px solid #fff;
                 display: grid;
                 place-items: center;
+
+                &:hover {
+                    background: var(--linen);
+                    color: var(--black);
+                }
             }
         }
     }
@@ -211,14 +221,13 @@ header {
                     border: 2px solid var(--sherpa-blue);
 
                     &:hover {
-                        transform: scale(1.05);
                         background: var(--text-gray);
                     }
                 }
 
                 .button-contact {
                     background: var(--text-gray);
-                    border: 1px solid #fff;
+                    border: 1px solid var(--linen);
                 }
             }
 
@@ -232,9 +241,14 @@ header {
                     padding: 0;
                     border-radius: 50%;
                     background: transparent;
-                    border: 1px solid #fff;
+                    border: 1px solid var(--linen);
                     display: grid;
                     place-items: center;
+
+                    &:hover {
+                        background: var(--linen);
+                        color: var(--black);
+                    }
                 }
             }
         }
@@ -354,6 +368,7 @@ header {
             padding: 2px 0;
             position: relative;
             -webkit-background-clip: text;
+            background-clip: text;
             -webkit-text-fill-color: transparent;
             transition: all 0.3s ease-in-out;
             font-size: 16px;
@@ -438,6 +453,7 @@ header {
             padding: 2px 0;
             position: relative;
             -webkit-background-clip: text;
+            background-clip: text;
             -webkit-text-fill-color: transparent;
             transition: all 0.3s ease-in-out;
             font-size: 18px;
@@ -520,6 +536,7 @@ header {
             padding: 2px 0;
             position: relative;
             -webkit-background-clip: text;
+            background-clip: text;
             -webkit-text-fill-color: transparent;
             transition: all 0.3s ease-in-out;
             font-size: 1.2rem;
@@ -571,7 +588,6 @@ header {
         background: #fff;
         padding: 10px 15px;
         border-radius: 20px;
-        box-shadow: 0 1px 5px 0 #f4f4f4;
 
         .navbar__navlinks {
             a {
@@ -584,6 +600,7 @@ header {
                 padding: 2px 0;
                 position: relative;
                 -webkit-background-clip: text;
+                background-clip: text;
                 -webkit-text-fill-color: transparent;
                 transition: all 0.3s ease-in-out;
             }
@@ -621,7 +638,6 @@ header {
             background: #fff;
             padding: 8px;
             border-radius: 20px;
-            box-shadow: 0 1px 5px 0 #f4f4f4;
             margin: 0 auto;
         }
     }
@@ -637,7 +653,6 @@ header {
             background: #fff;
             padding: 10px 15px;
             border-radius: 20px;
-            box-shadow: 0 1px 5px 0 #f4f4f4;
             margin: 0 auto;
         }
     }
@@ -652,7 +667,6 @@ header {
             background: #fff;
             padding: 10px 15px;
             border-radius: 20px;
-            box-shadow: 0 1px 5px 0 #f4f4f4;
             margin: 0 auto;
             margin-top: 10px;
         }
@@ -661,13 +675,57 @@ header {
 
 @media screen and (min-width : 1600px) {
     .header__sticky {
-
         .navbar {
             background: #fff;
             padding: 20px 30px;
             border-radius: 20px;
-            box-shadow: 0 1px 5px 0 #f4f4f4;
             margin-top: 10px;
+
+
+            .navbar__navlinks {
+                width: 45%;
+                z-index: 1000;
+
+                display: flex !important;
+                align-items: center;
+                justify-content: space-between;
+
+                a {
+                    color: var(--black);
+                    text-decoration: none;
+                    background-image: linear-gradient(to right, var(--black), var(--black) 50%, var(--black) 50%);
+                    background-size: 200% 100%;
+                    background-position: -100%;
+                    display: inline-block;
+                    padding: 2px 0;
+                    position: relative;
+                    -webkit-background-clip: text;
+                    background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    transition: all 0.3s ease-in-out;
+                    font-size: 1.25rem;
+                }
+
+                a:before {
+                    content: "";
+                    background: var(--black);
+                    display: block;
+                    position: absolute;
+                    bottom: -3px;
+                    left: 0;
+                    width: 0;
+                    height: 1px;
+                    transition: all 0.3s ease-in-out;
+                }
+
+                a:hover {
+                    background-position: 0;
+                }
+
+                a:hover::before {
+                    width: 100%;
+                }
+            }
         }
     }
 }
@@ -720,9 +778,10 @@ header {
             padding: 2px 0;
             position: relative;
             -webkit-background-clip: text;
+            background-clip: text;
             -webkit-text-fill-color: transparent;
             transition: all 0.3s ease-in-out;
-            font-size: 1.8rem;
+            font-size: 1.25rem;
         }
 
         a:before {
@@ -752,7 +811,7 @@ header {
             cursor: pointer;
             border: 1px solid var(--yellow);
             transition: all 0.3s ease-in-out;
-            font-size: 1.8rem;
+            font-size: 1.25rem;
 
             &:hover {
                 transform: scale(1.05);
